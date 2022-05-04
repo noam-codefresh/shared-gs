@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: cf-all
 data:
-  key: value5
+  key: value6
