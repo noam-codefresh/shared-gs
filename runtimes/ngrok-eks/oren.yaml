@@ -4,18 +4,18 @@ metadata:
   labels:
     codefresh.io/entity: internal-config
     codefresh.io/internal: 'true'
-  name: isc-in-cluster
+  name: isc-oren
   namespace: ngrok-eks
 spec:
   destination:
     namespace: isc
-    server: https://kubernetes.default.svc
+    server: https://9BDA6CC27C15703B31AFF558AD197407.gr7.us-east-1.eks.amazonaws.com
   project: default
   source:
     repoURL: https://github.com/noam-codefresh/shared-gs
     path: resources
     directory:
-      include: '{all/**/*.yaml,all/*.yaml,prod/**/*.yaml,prod/*.yaml}'
+      include: '{all/**/*.yaml,all/*.yaml}'
       recurse: true
   syncPolicy:
     automated:
