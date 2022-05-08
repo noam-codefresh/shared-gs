@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  labels:
+    codefresh.io/entity: internal-config
+    codefresh.io/internal: 'true'
+  name: isc-in-cluster
+  namespace: ngrok-eks
+spec:
+  destination:
+    namespace: isc
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    repoURL: https://github.com/noam-codefresh/shared-gs
+    path: resources
+    directory:
+      include: '{all/*.yaml,all/**/*.yaml,prod/*.yaml,prod/**/*.yaml}'
+      recurse: true
+  syncPolicy:
+    automated:
+      allowEmpty: true
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - allowEmpty=true
