@@ -14,8 +14,8 @@ spec:
   source:
     repoURL: https://github.com/noam-codefresh/shared-gh
     path: resources
-    dir:
-      include: {all/**/*.yaml,all/*.yaml}
+    directory:
+      include: "{all/**/*.yaml,all/*.yaml}"
   syncPolicy:
     automated:
       allowEmpty: true
