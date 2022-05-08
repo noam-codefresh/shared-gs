@@ -1,5 +1,0 @@
-source
-  git: github.com/.../shared-gs
-  path: resources
-  dir:
-    include: {}

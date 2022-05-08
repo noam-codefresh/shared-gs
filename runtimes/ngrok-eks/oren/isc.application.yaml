@@ -4,12 +4,12 @@ metadata:
   labels:
     codefresh.io/entity: internal-config
     codefresh.io/internal: "true"
-  name: isc
-  namespace: codefresh2
+  name: isc-oren
+  namespace: ngrok-eks
 spec:
   destination:
     namespace: prod-eks
-    server: https://kubernetes.default.svc
+    server: https://9BDA6CC27C15703B31AFF558AD197407.gr7.us-east-1.eks.amazonaws.com
   project: default
   source:
     repoURL: https://github.com/noam-codefresh/shared-gh
