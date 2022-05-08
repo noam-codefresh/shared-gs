@@ -16,7 +16,6 @@ spec:
     path: resources
     directory:
       include: '{all/*.yaml,all/**/*.yaml}'
-      exclude: ''
       recurse: true
   syncPolicy:
     automated:
