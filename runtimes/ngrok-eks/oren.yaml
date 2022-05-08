@@ -5,7 +5,6 @@ metadata:
     codefresh.io/entity: internal-config
     codefresh.io/internal: 'true'
   name: isc-oren
-  namespace: ngrok-eks
 spec:
   destination:
     namespace: isc
