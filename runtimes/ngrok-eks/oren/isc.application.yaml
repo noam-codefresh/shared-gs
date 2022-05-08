@@ -8,7 +8,7 @@ metadata:
   namespace: ngrok-eks
 spec:
   destination:
-    namespace: prod-eks
+    namespace: isc
     server: https://9BDA6CC27C15703B31AFF558AD197407.gr7.us-east-1.eks.amazonaws.com
   project: default
   source:
