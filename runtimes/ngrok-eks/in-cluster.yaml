@@ -15,7 +15,7 @@ spec:
     repoURL: https://github.com/noam-codefresh/shared-gs
     path: resources
     directory:
-      include: '{all/*.yaml,all/**/*.yaml}'
+      include: '{all/*.yaml,all/**/*.yaml,prod/*.yaml,prod/**/*.yaml}'
       recurse: true
   syncPolicy:
     automated:
