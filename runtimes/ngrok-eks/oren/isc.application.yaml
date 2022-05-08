@@ -12,7 +12,7 @@ spec:
     server: https://9BDA6CC27C15703B31AFF558AD197407.gr7.us-east-1.eks.amazonaws.com
   project: default
   source:
-    repoURL: https://github.com/noam-codefresh/shared-gh
+    repoURL: https://github.com/noam-codefresh/shared-gs
     path: resources
     directory:
       include: "{all/**/*.yaml,all/*.yaml}"
