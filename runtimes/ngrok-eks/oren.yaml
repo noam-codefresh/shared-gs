@@ -14,7 +14,7 @@ spec:
     repoURL: https://github.com/noam-codefresh/shared-gs
     path: resources
     directory:
-      include: '{all/*.yaml,all/**/*.yaml}'
+      include: '{all-runtimes-all-clusters/*.yaml,all-runtimes-all-clusters/**/*.yaml,runtimes/ngrok-eks/*.yaml,runtimes/ngrok-eks/**/*.yaml}'
       recurse: true
   syncPolicy:
     automated:
