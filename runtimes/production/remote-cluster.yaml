@@ -8,13 +8,13 @@ metadata:
 spec:
   destination:
     namespace: isc
-    server: https://9BDA6CC27C15703B31AFF558AD197407.gr7.us-east-1.eks.amazonaws.com
+    server: https://<some-hash>.gr7.us-east-1.eks.amazonaws.com
   project: default
   source:
     repoURL: https://github.com/noam-codefresh/shared-gs
     path: resources
     directory:
-      include: '{all-runtimes-all-clusters/*.yaml,all-runtimes-all-clusters/**/*.yaml,runtimes/ngrok-eks/*.yaml,runtimes/ngrok-eks/**/*.yaml}'
+      include: '{all-runtimes-all-clusters/*.yaml,all-runtimes-all-clusters/**/*.yaml,runtimes/production/*.yaml,runtimes/production/**/*.yaml}'
       recurse: true
   syncPolicy:
     automated:
