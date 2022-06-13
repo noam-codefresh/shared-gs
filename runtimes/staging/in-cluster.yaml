@@ -4,7 +4,7 @@ metadata:
   labels:
     codefresh.io/entity: internal-config
     codefresh.io/internal: 'true'
-  name: isc-in-cluster
+  name: in-cluster
 spec:
   destination:
     namespace: isc
